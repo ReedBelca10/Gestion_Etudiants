@@ -149,8 +149,8 @@ Ce projet est sous licence MIT. Voir le fichier [LICENSE](LICENSE) pour plus de 
 ## 📧 Contact
 
 Pour toute question ou suggestion, n'hésitez pas à me contacter :
-- Email : [reedbelca55@gmail.com]
-- GitHub : [@ReedBelca10]
+- Email : reedbelca55@gmail.com
+- GitHub : @ReedBelca10
 
 ## 🙏 Remerciements
 
