@@ -1,0 +1,380 @@
+/* Styles généraux */
+body {
+    background-color: #f8f9fa;
+}
+
+/* Formulaires */
+.form-container {
+    background-color: white;
+    padding: 1.2rem;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    margin-top: 2rem;
+}
+
+/* Page de connexion */
+.auth-page {
+    display: flex;
+    min-height: 100vh;
+}
+
+.auth-left {
+    flex: 2.2;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.75rem;
+}
+
+.auth-right {
+    flex: 0.8;
+    background-color: #0d6efd;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    padding: 10rem;
+    border-radius: 50px 0 0 50px;
+}
+
+.auth-copyright {
+    font-size: 0.9rem;
+    opacity: 0.9;
+    text-align: center;
+    margin-top: auto;
+    padding-bottom: 0.5rem;
+}
+
+.login-form {
+    width: 100%;
+    max-width: 450px;
+    padding: 0 0.02rem;
+}
+
+.login-form h1 {
+    font-size: 2rem;
+    margin-bottom: 0.75rem;
+}
+
+.login-form h2 {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+    opacity: 0.9;
+}
+
+.auth-welcome {
+    text-align: center;
+    max-width: 350px;
+    padding: 0 0.5rem;
+    margin: 0 auto;
+}
+
+.auth-welcome h2.gradient-text {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    background: linear-gradient(to bottom, #ffffff 0%, #001f3f 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-weight: bold;
+}
+
+.auth-welcome .welcome-description {
+    font-size: 1.1rem;
+    opacity: 0.9;
+    color: white;
+    margin-top: 1rem;
+}
+
+.login-form h1 {
+    color: #0d6efd;
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+
+.login-form .subtitle {
+    color: #6c757d;
+    font-size: 1rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.login-form .form-group {
+    margin-bottom: 1.25rem;
+}
+
+.login-form .form-label {
+    color: #6c757d;
+    font-size: 0.9rem;
+    margin-bottom: 0.4rem;
+}
+
+.login-form .form-control {
+    border: 1px solid #dee2e6;
+    padding: 0.75rem 0.75rem 0.75rem 2.5rem;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    height: 3rem;
+}
+
+.login-form .form-group {
+    position: relative;
+}
+
+.login-form .form-group i {
+    position: absolute;
+    left: 0.75rem;
+    top: 50%;
+    transform: translateY(25%);
+    color: #6c757d;
+    font-size: 1rem;
+    pointer-events: none;
+    line-height: 1;
+    display: flex;
+    align-items: center;
+}
+
+.required-field::after {
+    content: "*";
+    color: #dc3545;
+    margin-left: 4px;
+}
+
+.login-form .form-control:focus {
+    border-color: #0d6efd;
+    box-shadow: none;
+    outline: none;
+}
+
+.login-form .form-control::placeholder {
+    color: #adb5bd;
+    font-size: 0.9rem;
+}
+
+.login-form .btn-primary {
+    background-color: #0d6efd;
+    border: none;
+    padding: 0.5rem 1.5rem;
+    font-weight: 500;
+    font-size: 0.9rem;
+}
+
+.register-prompt {
+    font-size: 0.9rem;
+}
+
+.register-prompt a:hover {
+    text-decoration: underline !important;
+}
+
+.login-form .btn-primary:hover {
+    background-color: #0b5ed7;
+}
+
+.login-footer {
+    text-align: center;
+    color: #6c757d;
+    font-size: 0.9rem;
+    margin-top: 2rem;
+    padding: 1rem;
+}
+
+.form-check {
+    margin-top: 1rem;
+}
+
+.forgot-password {
+    color: #0d6efd;
+    text-decoration: none;
+    font-size: 0.9rem;
+    float: right;
+}
+
+.forgot-password:hover {
+    text-decoration: underline;
+}
+
+/* Tableaux */
+.table-container {
+    background-color: white;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    margin-top: 2rem;
+}
+
+/* Cards du dashboard */
+.dashboard-card {
+    transition: transform 0.2s;
+}
+
+.dashboard-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Messages d'alerte */
+.alert {
+    margin-top: 1rem;
+}
+
+/* Boutons */
+.btn-action {
+    margin: 0 0.2rem;
+}
+
+/* Styles pour les pages de connexion et d'inscription */
+.auth-container {
+    max-width: 400px;
+    margin: 2rem auto;
+}
+
+/* Styles pour la pagination */
+.pagination {
+    margin-top: 1rem;
+    justify-content: center;
+}
+
+/* Styles responsifs */
+@media (min-width: 1400px) {
+    .auth-left {
+        flex: 2.2;
+    }
+    .auth-right {
+        flex: 0.8;
+        padding: 10rem;
+    }
+}
+
+@media (max-width: 1399px) {
+    .auth-left {
+        flex: 2.5;
+    }
+    .auth-right {
+        flex: 0.7;
+        padding: 8rem 2rem;
+    }
+}
+
+@media (max-width: 1200px) {
+    .auth-left {
+        flex: 3;
+    }
+    .auth-right {
+        flex: 0.6;
+        padding: 6rem 1.5rem;
+    }
+    .auth-welcome h2.gradient-text {
+        font-size: 2.2rem;
+    }
+}
+
+@media (max-width: 992px) {
+    .auth-left {
+        flex: 3.5;
+    }
+    .auth-right {
+        flex: 0.5;
+        padding: 4rem 1rem;
+    }
+    .auth-welcome h1 {
+        font-size: 1.8rem;
+    }
+    .auth-welcome h2.gradient-text {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .auth-left {
+        flex: 4;
+    }
+    .auth-right {
+        flex: 0.4;
+        padding: 3rem 0.75rem;
+    }
+    .auth-welcome h1 {
+        font-size: 1.5rem;
+    }
+    .auth-welcome h2.gradient-text {
+        font-size: 1.75rem;
+    }
+    .auth-welcome .welcome-description {
+        font-size: 0.9rem;
+    }
+    .login-form .form-control {
+        height: 2.75rem;
+        padding: 0.6rem 0.6rem 0.6rem 2.25rem;
+    }
+    .login-form .form-group i {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .auth-right {
+        display: none;
+    }
+    .auth-left {
+        flex: 1;
+        width: 100%;
+        padding: 2rem 1rem;
+    }
+    .form-container {
+        padding: 1rem;
+        margin: 1rem;
+    }
+    .container {
+        padding: 0.5rem;
+    }
+    .btn {
+        margin-bottom: 0.5rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .auth-container {
+        margin: 0.5rem;
+        padding: 1rem;
+    }
+
+    .table-responsive {
+        font-size: 0.8rem;
+    }
+
+    .nav-link {
+        padding: 0.5rem;
+    }
+
+    .form-label {
+        font-size: 0.9rem;
+    }
+
+    .alert {
+        padding: 0.5rem;
+        margin: 0.5rem 0;
+    }
+
+    .display-4 {
+        font-size: 2rem;
+    }
+}
+
+/* Styles d'impression */
+@media print {
+    .navbar, .btn, .no-print {
+        display: none !important;
+    }
+    
+    .container {
+        width: 100% !important;
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+    
+    body {
+        font-size: 12pt;
+    }
+}

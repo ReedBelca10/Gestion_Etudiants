@@ -15,7 +15,7 @@ CREATE TABLE users (
   user_lastname VARCHAR(100) NOT NULL,
   password VARCHAR(255) NOT NULL, -- stocker un hash (bcrypt/argon2)
   profile ENUM('admin','invite') NOT NULL DEFAULT 'invite',
-  user_profile_image VARCHAR(255) DEFAULT NULL, -- chemin vers l'image (ex: uploads/profile_images/user1.png)
+  user_profile_image VARCHAR(255) DEFAULT NULL, -- chemin vers l'image (ex: assets/img/user1.png)
   created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
